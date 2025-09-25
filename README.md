@@ -28,20 +28,23 @@ React	Frontend framework
 @react-three/drei	Useful helpers (OrbitControls, Html, etc.)
 Three.js	Core 3D rendering engine
 AI 3D Model Tools	Used to generate and optimize the anatomy model
-📁 Project Structure
+
 3d-human-anatomy/
 │
-├─ src/
-│  ├─ components/
-│  │  ├─ HumanModel.jsx       # 3D model and interaction logic
-│  │  ├─ MuscleInfo.jsx       # Info page for each muscle
-│  │  └─ Controls.jsx         # Orbit and camera controls
-│  ├─ assets/
-│  │  └─ humanModel.glb       # AI-generated 3D human model
-│  ├─ App.jsx
-│  └─ index.js
+├── src/
+│   ├── components/
+│   │   ├── HumanModel.jsx      # 3D model and interaction logic
+│   │   ├── MuscleInfo.jsx      # Info page for each muscle
+│   │   └── Controls.jsx        # Orbit and camera controls
+│   │
+│   ├── assets/
+│   │   └── humanModel.glb      # AI-generated 3D human model
+│   │
+│   ├── App.jsx
+│   └── index.js
 │
-└─ package.json
+└── package.json
+
 
 🧑‍💻 Installation & Setup
 
