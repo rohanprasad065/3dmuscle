@@ -1,14 +1,14 @@
-import React, { Suspense } from "react";
+import  { Suspense } from "react";
 import { Canvas } from "@react-three/fiber";
 import { OrbitControls, useGLTF } from "@react-three/drei";
 import trapsDetailImg from "../assets/trapsderail.jpeg"; // Image for right side
-
-function TrapsModel() {
+import type { JSX } from "react/jsx-dev-runtime";
+function TrapsModel(): JSX.Element {
   const { scene } = useGLTF("/back.glb"); // Load 3D model from public folder
   return <primitive object={scene} scale={2} />;
 }
 
-function Traps() {
+function Traps(): JSX.Element {
   return (
     <div className="flex min-h-screen bg-gray-50">
       {/* Left side: 3D model */}

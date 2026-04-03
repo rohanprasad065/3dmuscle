@@ -1,8 +1,8 @@
-import React from 'react';
 import abs from "../assets/abs.jpeg";
 import abs2 from "../assets/abs2.jpeg";
+import type { JSX } from "react/jsx-dev-runtime";
 
-function Abdominals() {
+function Abdominals(): JSX.Element {
   return (
     <div className="flex flex-col md:flex-row items-center gap-6 p-6">
       {/* Left Side - Image */}

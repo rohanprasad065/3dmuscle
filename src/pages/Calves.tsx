@@ -1,7 +1,7 @@
-import React from "react";
+import type { JSX } from "react/jsx-dev-runtime";
 import calf from "../assets/calf.jpeg";
 
-function Calves() {
+function Calves(): JSX.Element {
   return (
     <div className="flex flex-row h-screen">
       {/* Left Section - Image */}

@@ -1,14 +1,16 @@
-import React, { Suspense } from "react";
+import type { JSX } from "react/jsx-dev-runtime";
 import { Canvas } from "@react-three/fiber";
 import { OrbitControls, useGLTF } from "@react-three/drei";
 import neckDetailImg from "../assets/neckdetail.jpeg"; // Optional image
 
-function NeckModel() {
+import  { Suspense } from "react";
+
+function NeckModel(): JSX.Element {
   const { scene } = useGLTF("/neck.glb"); // Load GLB from public folder
   return <primitive object={scene} scale={2} />;
 }
 
-function Neck() {
+function Neck() : JSX.Element {
   return (
     <div className="flex min-h-screen bg-gray-50">
       {/* Left side: 3D model */}

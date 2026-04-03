@@ -1,7 +1,7 @@
-import React from "react";
 import backImg from "../assets/Back.jpeg";
+import type { JSX } from "react/jsx-dev-runtime";
 
-function Back() {
+function Back(): JSX.Element {
   return (
     <div className="min-h-screen bg-gray-50 flex items-center justify-center p-8">
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-6xl w-full bg-white rounded-2xl shadow-lg p-6">
@@ -25,9 +25,7 @@ function Back() {
           </p>
 
           <h2 className="text-2xl font-semibold">Main Back Muscle Groups and Anatomy</h2>
-          <p>
-            Back muscles are categorized into two main groups:
-          </p>
+          <p>Back muscles are categorized into two main groups:</p>
           <ul className="list-disc ml-6">
             <li><strong>Extrinsic (Superficial & Intermediate) Muscles:</strong> Control arm movements and help with respiration.</li>
             <li><strong>Intrinsic (Deep) Muscles:</strong> Stabilize the spine and control posture, split into superficial, intermediate, and deep sub-layers.</li>

@@ -1,9 +1,9 @@
-import React from "react";
+import type { JSX } from "react/jsx-dev-runtime";
 import Quadriceps from "../assets/Quadriceps.jpeg";
 import Hamstrings from "../assets/Hamstrings.jpeg";
 import Adductors from "../assets/Adductors.jpeg";
 
-function Thigh() {
+function Thigh(): JSX.Element {
   return (
     <div className="flex flex-col gap-12 p-6">
       {/* Quadriceps Section */}

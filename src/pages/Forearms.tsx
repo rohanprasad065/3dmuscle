@@ -1,8 +1,8 @@
-import React from "react";
+import type { JSX } from "react/jsx-dev-runtime";
 import forearm1 from "../assets/Forearm.jpeg";
 import forearm2 from "../assets/forarm.jpg";
 
-function Forearms() {
+function Forearms(): JSX.Element {
   return (
     <div className="flex h-screen">
       {/* Left Section - Images */}

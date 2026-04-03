@@ -1,5 +1,6 @@
-import React from "react";
+
 import ShoulderImg from "../assets/Shoulder.jpeg";
+import type { JSX } from "react/jsx-dev-runtime";
 
 export default function Shoulders(): JSX.Element {
   return (

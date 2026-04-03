@@ -1,7 +1,7 @@
-import React from "react";
+
 import { Canvas } from "@react-three/fiber";
 import { OrbitControls } from "@react-three/drei";
-import { Suspense } from "react";
+import { Suspense, type JSX } from "react";
 import { useGLTF } from "@react-three/drei";
 import bicepsImg from "../assets/Biceps.jpeg";
 
@@ -11,7 +11,7 @@ function ArmModel() {
   return <primitive object={scene} scale={2} position={[0, -1, 0]} />;
 }
 
-function Biceps() {
+function Biceps(): JSX.Element  {
   return (
     <div className="min-h-screen bg-gray-50 flex items-center justify-center p-8">
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-6xl w-full bg-white rounded-2xl shadow-lg p-6">

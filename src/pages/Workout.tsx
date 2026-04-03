@@ -1,8 +1,9 @@
-import React from "react";
+import type { JSX } from "react/jsx-dev-runtime";
 import { Link } from "react-router-dom";
-import ModelViewer from "../ModelViewer.tsx"; // adjust path if needed
+import ModelViewer from "../ModelViewer"; // adjust path if needed
 
-function Workout() {
+
+function Workout(): JSX.Element {
   const muscles = [
     { name: "Abdominals", path: "/abdominals" },
     { name: "Back", path: "/back" },

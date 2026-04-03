@@ -2,13 +2,14 @@ import React, { Suspense } from "react";
 import { Canvas } from "@react-three/fiber";
 import { OrbitControls, useGLTF } from "@react-three/drei";
 import chestImg from "../assets/Chest.jpeg";
+import type { JSX } from "react/jsx-dev-runtime";
 
-function ChestModel() {
+function ChestModel(): JSX.Element {
   const { scene } = useGLTF("/chest.glb");
   return <primitive object={scene} scale={2.2} />;
 }
 
-const Chest: React.FC = () => {
+const Chest: React.FC = ()  => {
   return (
     <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 p-6 bg-white rounded-2xl shadow-lg">
       {/* Left: 3D Model */}

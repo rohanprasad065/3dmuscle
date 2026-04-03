@@ -1,7 +1,7 @@
-import React from "react";
+import type { JSX } from "react/jsx-dev-runtime";
 import glutesImg from "../assets/Glutes.jpg";
 
-function Glutes() {
+function Glutes(): JSX.Element {
   return (
     <div className="flex h-screen">
       {/* Left Section - Information */}
